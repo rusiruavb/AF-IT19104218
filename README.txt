@@ -17,3 +17,11 @@ Start Spring Boot server
   2. Go to the "SpringApiApplication.java" file inside the "src" folder
   3. Right click and run that Java file to start the spring server.
   4. Then server is start running on PORT 9097
+
+How to start frontend application
+
+Start React application
+  1. Navigate to the "Frontend" folder
+  2. Run "npm install" to install the dependencies
+  3. Run "npm run start" to start the React application
+  4. Then React application is start running on PORT 3000
