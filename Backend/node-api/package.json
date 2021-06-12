@@ -1,0 +1,35 @@
+{
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "Backend API - IT19104218",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "npm run build && node build/app.js",
+    "build": "babel app.js src --out-dir build",
+    "test": "jest --setupFiles dotenv/config --forceExit"
+  },
+  "author": "IT19104218 - Bandara G.B.M.A.G.R.A.V.",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.14.0",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "pino": "^6.11.3",
+    "pino-pretty": "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  }
+}
