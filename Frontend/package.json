@@ -5,7 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --port 3000 --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setup-tests.js"
+    ],
+    "testEnvironment": "jsdom"
   },
   "author": "IT19104218 - Bandara G.B.M.A.G.R.A.V.",
   "license": "ISC",
@@ -21,12 +28,18 @@
     "react-select": "^4.3.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.2",
     "babel-core": "^6.26.3",
+    "babel-jest": "^27.0.2",
     "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^5.2.6",
+    "enzyme": "^3.11.0",
     "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.4",
     "style-loader": "^2.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2",

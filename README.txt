@@ -27,3 +27,12 @@ Start React application
   2. Run "npm install" to install the dependencies
   3. Run "npm run start" to start the React application
   4. Then React application is start running on PORT 3000
+
+Test React application
+  1. Go to the "Frontend" folder.
+  2. Run "npm run test" to execute unit testing.
+
+Test Backend service
+  1. Go to the "Backend" folder.
+  2. Then navigate to the "node-api" folder.
+  3. Run "npm run test" to execute test case.
